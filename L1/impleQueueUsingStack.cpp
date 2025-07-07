@@ -128,7 +128,7 @@ public:
 
 // Space Complexity:
 
-// Whole Queue: O(no of elements)
+// Whole Queue: O(2 * no of elements)
 
 int main(){
     MyQueue q;
