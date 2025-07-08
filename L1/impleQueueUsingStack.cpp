@@ -3,42 +3,42 @@
 using namespace std;
 
 
-Appproach 1
-class MyQueue {
-public:
-    stack<int> st1;
-    stack<int> st2;
-    MyQueue() {
+// Appproach 1
+// class MyQueue {
+// public:
+//     stack<int> st1;
+//     stack<int> st2;
+//     MyQueue() {
         
-    }
+//     }
     
-    void push(int x) {
-        while(st1.size()){
-            st2.push(st1.top());
-            st1.pop();
-        }
-        st1.push(x);
-        while(st2.size()){
-            st1.push(st2.top());
-            st2.pop();
-        }
-    }
+//     void push(int x) {
+//         while(st1.size()){
+//             st2.push(st1.top());
+//             st1.pop();
+//         }
+//         st1.push(x);
+//         while(st2.size()){
+//             st1.push(st2.top());
+//             st2.pop();
+//         }
+//     }
     
-    int pop() {
-        int popped = st1.top();
-        st1.pop();
-        return popped;
-    }
+//     int pop() {
+//         int popped = st1.top();
+//         st1.pop();
+//         return popped;
+//     }
     
-    int top() {
-        return st1.top();
-    }
+//     int top() {
+//         return st1.top();
+//     }
     
-    bool empty() {
-        if(st1.size() == 0) return true;
-        return false;
-    }
-};
+//     bool empty() {
+//         if(st1.size() == 0) return true;
+//         return false;
+//     }
+// };
 
 // Time Complexity:
 
